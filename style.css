@@ -28,7 +28,6 @@ a:hover {
 }
 
 .bloc {
-    width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
     padding: 0 50px;
@@ -45,7 +44,7 @@ a:hover {
 }
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 51px 39px;
 }
 
 .bloc-md {
@@ -88,11 +87,6 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-}
-
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
 }
 
 .b-parallax {
@@ -305,6 +299,7 @@ a:hover {
     max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
+    max-width: 200px;
 }
 
 .navbar-brand img[src$=svg] {
@@ -318,8 +313,6 @@ a:hover {
 .navbar .nav {
     padding-top: 2px;
     margin-right: -16px;
-    float: right;
-    z-index: 1;
 }
 
 .nav > li {
@@ -362,9 +355,49 @@ a:hover {
     z-index: 2;
 }
 
+/* CODE RETRAVAILLE */
+
+    /* PAGE 1 */
+.col-sm-12 img {
+    width: 19%;
+}
+
+.col-sm-12 span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.col-xs-12 p {
+    font-style: italic;
+    font-size: 22px;
+}
+
+.col-xs-12 span {
+    font-weight: 400;
+    font-size: 16px;
+    color: #575757;
+}
+
+    /* PAGE 2 */
+.navbar .nav {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.bloc6 .bg-img {
+    width: 100%;
+}
+
+.img-contact-page {
+    width: 50%;
+}
+
+
+/* FIN CODE RETRAVAILLE */
+
 @media (min-width: 768px) {
     .site-navigation {
-        position: absolute;
         top: 50%;
         right: 20px;
         transform: translate(0, -50%);
@@ -682,7 +715,6 @@ p {
 
 .tight-width-whitespace {
     max-width: 600px;
-    margin: auto auto auto auto;
 }
 
 .h1 {
@@ -693,7 +725,6 @@ p {
 .cta-hero {
     margin-top: 22px;
     color: #FFFFFF!important;
-    text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
     font-weight: 700;
@@ -730,7 +761,7 @@ h4 {
     color: #333333!important;
 }
 
-.icons {
+.igs {
     margin-bottom: 14px;
     margin-top: 24px;
 }
@@ -770,10 +801,6 @@ h4 {
     background-color: #364577;
 }
 
-.bgc-atomic-tangerine {
-    background-color: #F3976C;
-}
-
 .tc-white {
     color: #F3976C!important;
 }
@@ -807,10 +834,6 @@ h4 {
 .icon-dark-slate-blue {
     color: #364577!important;
     border-color: #364577!important;
-}
-
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
 }
 
 .bg-lines-h2-bg {
@@ -964,6 +987,7 @@ h4 {
     .navbar-brand img {
         max-height: 40px;
         width: auto;
+        min-width: 100px;
     }
     .nav-invert .navbar-header {
         float: none;
@@ -978,8 +1002,7 @@ h4 {
         padding-right: 0;
     }
     .bloc-xxl,
-    .bloc-xl,
-    .bloc-lg {
+    .bloc-xl {
         padding: 40px 0;
     }
     .bloc-sm,
@@ -1026,17 +1049,15 @@ h4 {
         width: 180px;
         height: 320px;
     }
+
+    .bloc-mob-center-text {
+        text-align: center;
+    }
 }
 
 @media (max-width: 400px) {
     .bloc {
         padding-left: 0;
         padding-right: 0;
-    }
-}
-
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
     }
 }

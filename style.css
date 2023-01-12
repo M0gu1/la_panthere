@@ -302,7 +302,7 @@ a:hover {
 }
 
 .navbar-brand img {
-    max-height: 200px;
+    max-height: 40px;
     margin: 0 5px 0 0;
     display: inline;
 }
@@ -775,7 +775,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFF!important;
 }
 
 .btn-atomic-tangerine {
@@ -824,6 +824,25 @@ h4 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
 }
+
+/* DEBUT CODE RETRAVAILLE */
+    /* PAGE ACCUEIL */
+    .col-sm-12 img {
+        width: 20px;
+    } 
+    
+        /* PAGE CONTACT */
+    .bloc6 img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .bloc6 bg-img {
+        width: 100%;
+        height: 50%;
+    }
+    
+/* FIN CODE RETRAVAILLE */
 
 @media (max-width: 1024px) {
     .bloc {

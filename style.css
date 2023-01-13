@@ -355,6 +355,8 @@ a:hover {
 .img-responsive .portfolio-thumb {
     max-width: 400px;
     max-height: 400px;
+    width: 400px;
+    height: 400px;
 }
 
 @media (min-width: 768px) {

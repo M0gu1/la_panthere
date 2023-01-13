@@ -91,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("./img_webp/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -520,7 +520,8 @@ button {
 
 a[data-lightbox] {
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: center;
     text-align: center;
     max-width: 100%;
     height: auto;
@@ -639,7 +640,7 @@ p,
 label,
 .btn,
 a {
-    font-family: "helvetica";
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
     font-weight: 400;
     color: #575757!important;
 }
@@ -667,7 +668,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .tight-width-whitespace {
@@ -677,7 +678,7 @@ p {
 
 .h1 {
     font-size: 20px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", Helvetica,Arial;
 }
 
 .cta-hero {
@@ -817,10 +818,19 @@ h4 {
 
 /* DEBUT CODE RETRAVAILLE */
     /* PAGE ACCUEIL */
+    .text-center span {
+        color: #FFF;
+    }
+    
     .col-sm-12 img {
         width: 100px;
         height: 100px;
     } 
+
+    .col-sm-6 img {
+        max-width: 300px;
+        max-height: 300px;
+    }
     
         /* PAGE CONTACT */
     .bloc6 img {
@@ -847,6 +857,11 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+
+    .col-sm-6 img {
+        max-width: 300px;
+        max-height: 300px;
+    }
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
@@ -856,11 +871,21 @@ h4 {
     .nav-center.navbar .nav {
         max-width: 100%
     }
+
+    .col-sm-6 img {
+        max-width: 300px;
+        max-height: 300px;
+    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
+    }
+
+    .col-sm-6 img {
+        max-width: 300px;
+        max-height: 300px;
     }
 }
 
@@ -868,11 +893,16 @@ h4 {
     .b-parallax {
         background-attachment: scroll;
     }
+
+    .col-sm-6 img {
+        max-width: 300px;
+        max-height: 300px;
+    }
 }
 
 @media (max-width: 991px) {
     .container {
-        width: 100%;
+        width: 77%;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -896,6 +926,11 @@ h4 {
         padding: 0 20px;
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
+    }
+
+    .col-sm-6 img {
+        max-width: 300px;
+        max-height: 300px;
     }
 }
 
@@ -1036,6 +1071,19 @@ h4 {
         width: 180px;
         height: 320px;
     }
+
+    .col-sm-6 img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .bloc-mob-center-text {
+        text-align: center;
+    } 
+
+    .container {
+        width: 77%;
+    }
 }
 
 @media (max-width: 400px) {
@@ -1043,10 +1091,13 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
-}
 
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
+    .container {
+        width: 77%;
+    }
+
+    .col-sm-6 img {
+        max-width: 300px;
+        max-height: 300px;
     }
 }

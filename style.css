@@ -834,8 +834,8 @@ h4 {
     }
     
     .col-sm-12 img {
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
     } 
 
     .col-sm-6 img {
@@ -1012,7 +1012,7 @@ h4 {
         box-shadow: none;
     }
     .navbar-brand img {
-        max-height: 40px;
+        max-height: 27px;
         width: auto;
         
     }
